@@ -22,6 +22,7 @@
 		D4F8E29C1F46A2610014EAD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4F8E29F1F46A2610014EAD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4F8E2A11F46A2610014EAD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F8E2AA1F46A6520014EAD2 /* CalculateOr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalculateOr.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				D4F8E2941F46A2610014EAD2 /* CalculateOr */,
+				D4F8E2AB1F46A6540014EAD2 /* Frameworks */,
 				D4F8E2931F46A2610014EAD2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +56,46 @@
 		D4F8E2941F46A2610014EAD2 /* CalculateOr */ = {
 			isa = PBXGroup;
 			children = (
-				D4F8E2951F46A2610014EAD2 /* AppDelegate.swift */,
-				D4F8E2971F46A2610014EAD2 /* ViewController.swift */,
-				D4F8E2991F46A2610014EAD2 /* Main.storyboard */,
-				D4F8E29C1F46A2610014EAD2 /* Assets.xcassets */,
-				D4F8E29E1F46A2610014EAD2 /* LaunchScreen.storyboard */,
-				D4F8E2A11F46A2610014EAD2 /* Info.plist */,
+				D4F8E2A71F46A53B0014EAD2 /* Controllers */,
+				D4F8E2A91F46A5950014EAD2 /* Supporting */,
+				D4F8E2A81F46A55B0014EAD2 /* Views */,
 			);
 			path = CalculateOr;
+			sourceTree = "<group>";
+		};
+		D4F8E2A71F46A53B0014EAD2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4F8E2971F46A2610014EAD2 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D4F8E2A81F46A55B0014EAD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4F8E29E1F46A2610014EAD2 /* LaunchScreen.storyboard */,
+				D4F8E2991F46A2610014EAD2 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D4F8E2A91F46A5950014EAD2 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				D4F8E2951F46A2610014EAD2 /* AppDelegate.swift */,
+				D4F8E29C1F46A2610014EAD2 /* Assets.xcassets */,
+				D4F8E2AA1F46A6520014EAD2 /* CalculateOr.entitlements */,
+				D4F8E2A11F46A2610014EAD2 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		D4F8E2AB1F46A6540014EAD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +132,14 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4C7AR59H6U;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -151,6 +193,7 @@
 				D4F8E29A1F46A2610014EAD2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		D4F8E29E1F46A2610014EAD2 /* LaunchScreen.storyboard */ = {
@@ -159,6 +202,7 @@
 				D4F8E29F1F46A2610014EAD2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -263,8 +307,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalculateOr/Supporting/CalculateOr.entitlements;
 				DEVELOPMENT_TEAM = 4C7AR59H6U;
-				INFOPLIST_FILE = CalculateOr/Info.plist;
+				INFOPLIST_FILE = CalculateOr/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robert-hatfield.CalculateOr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,8 +321,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalculateOr/Supporting/CalculateOr.entitlements;
 				DEVELOPMENT_TEAM = 4C7AR59H6U;
-				INFOPLIST_FILE = CalculateOr/Info.plist;
+				INFOPLIST_FILE = CalculateOr/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robert-hatfield.CalculateOr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +350,7 @@
 				D4F8E2A61F46A2610014EAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
